@@ -9,6 +9,10 @@ public class ProductsPage {
 	@FindBy (xpath="//img[@title='Create Product...']")
 	private WebElement createProdBtn;
 
+	
+	@FindBy (xpath="searchBTN")
+	private WebElement ele3;
+	
 	public WebElement getCreateProdBtn() {
 		return createProdBtn;
 	}
