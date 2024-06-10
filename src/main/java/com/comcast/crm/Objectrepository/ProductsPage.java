@@ -19,6 +19,9 @@ public class ProductsPage {
 	@FindBy (xpath="searchBTN")
 	private WebElement ele4;
 	
+	@FindBy (xpath="searchBTN")
+	private WebElement ele5;
+	
 	public ProductsPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
