@@ -1,4 +1,3 @@
-
 package com.comcast.crm.Objectrepository;
 
 import org.openqa.selenium.WebDriver;
@@ -9,20 +8,19 @@ import org.openqa.selenium.support.PageFactory;
 public class ProductsPage {
 	@FindBy (xpath="//img[@title='Create Product...']")
 	private WebElement createProdBtn;
-	
-	@FindBy(name="search")
-	private WebElement ele2;
 
+	
+	@FindBy (xpath="searchBTN")
+	private WebElement ele3;
+	
 	public WebElement getCreateProdBtn() {
 		return createProdBtn;
 	}
+	@FindBy (xpath="searchBTN")
+	private WebElement ele4;
 	
 	public ProductsPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-	}
-
-	public WebElement getEle2() {
-		return ele2;
 	}
 
 }
