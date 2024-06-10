@@ -33,6 +33,8 @@ WebDriver driver;
 	@FindBy(xpath="//a[text()='Sign Out']")
 	private WebElement signOutBtn;
 	
+	@FindBy(linkText="Products")
+	private WebElement productLink;
 
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
@@ -46,6 +48,12 @@ WebDriver driver;
 	public WebElement getContactLink() {
 		return contactLink;
 	}
+	
+	
+	public WebElement getProductLink() {
+		return productLink;
+	}
+
 	/**
 	 * This method contains bussiness logic for navigate to campaignpage 
 	 */
