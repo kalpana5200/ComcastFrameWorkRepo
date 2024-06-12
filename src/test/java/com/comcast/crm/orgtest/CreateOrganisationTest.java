@@ -1,5 +1,5 @@
 
-package orgtest;
+package com.comcast.crm.orgtest;
 
 import java.io.FileInputStream;
 import java.io.IOException;

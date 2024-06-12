@@ -1,5 +1,5 @@
 
-package contacttest;
+package com.comcast.crm.contacttest;
 
 import org.openqa.selenium.By;
 
