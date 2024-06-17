@@ -23,6 +23,8 @@ import com.comcast.crm.generic.webdriverutility.JavaUtility;
 import com.comcast.crm.generic.webdriverutility.UtilityClassObject;
 import com.comcast.crm.generic.webdriverutility.WebdriverUtility;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass {
 	public WebDriver driver = null;
 	public DataBaseUtility dlib = new DataBaseUtility();
@@ -47,8 +49,10 @@ public class BaseClass {
 
 		String browser = flib.getDataFromPropertyFile("browser");
 		if (browser.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}
 		edriver = driver;
